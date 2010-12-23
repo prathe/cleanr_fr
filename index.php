@@ -10,7 +10,7 @@
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<span class="postmetadata"><?php the_category(' / ') ?> &mdash; <?php edit_post_link('Modifier', '', ' &mdash; '); ?>  <?php comments_popup_link('Aucun commentaire', 'Un commentaire', '% commentaires'); ?></span><br/>
 			    <small><span class="date"><?php the_time('d') ?></span><br /><?php the_time('M y') ?> <!-- by <?php the_author() ?> --></small>
-				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent sur la page : <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers l'article : <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				
 				
 
