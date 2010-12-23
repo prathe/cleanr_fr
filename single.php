@@ -16,27 +16,27 @@
 
 				<p class="postmetadata alt">
 					<small>
-						This entry was posted on <?php the_time('l, F jS, Y') ?> at <?php the_time() ?>
-						and is filed under <?php the_category(', ') ?>.
-						You can follow any comments to this entry through the <?php post_comments_feed_link('RSS 2.0'); ?> feed.
+						Cet article a été publié le <?php the_time('j F Y') ?> à <?php the_time() ?>
+						sous <?php the_category(', ') ?>.
+						Vous pouvez vous abonner aux <?php post_comments_feed_link('fil RSS'); ?> des commentaires de cet article.
 
 						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// Both Comments and Pings are open ?>
-							You can <a href="#respond">leave a comment</a>, or <a href="<?php trackback_url(); ?>" rel="trackback">trackback</a> from your own site.
+							Vous pouvez <a href="#respond">laisser un commentaire</a> ou <a href="<?php trackback_url(); ?>" rel="trackback">pointer sur cet article</a> depuis votre propre site.
 
 						<?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// Only Pings are Open ?>
-							Responses are currently closed, but you can <a href="<?php trackback_url(); ?> " rel="trackback">trackback</a> from your own site.
+							Vous pouvez <a href="<?php trackback_url(); ?> " rel="trackback">pointer sur cet article</a> depuis votre propre site.
 
 						<?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
 							// Comments are open, Pings are not ?>
-							You can skip to the end and leave a comment. Pinging is currently not allowed.
+							Vous pouvez laisser un commentaire.
 
 						<?php } elseif (!('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
 							// Neither Comments, nor Pings are open ?>
-							Both comments and pings are currently closed.
+							La section des commentaires est fermée.
 
-						<?php } edit_post_link('Edit this entry','','.'); ?>
+						<?php } edit_post_link('Modifier cet article','','.'); ?>
 
 					</small>
 				</p>
