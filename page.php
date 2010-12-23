@@ -5,14 +5,14 @@
 		<div class="post" id="post-<?php the_ID(); ?>">
 		<h2><?php the_title(); ?></h2>
 			<div class="entry">
-				<?php the_content('<em>Continue reading &rarr;</em>'); ?>
+				<?php the_content("<em>Lire le reste de l'article &rarr;</em>"); ?>
 
-				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+				<?php wp_link_pages(array('before' => '<p><strong>Pages :</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
 			</div>
 		</div>
 		<?php endwhile; endif; ?>
-	 <?php edit_post_link('Edit', '<p>', '</p>'); ?>
+	 <?php edit_post_link('Modifier', '<p>', '</p>'); ?>
 	 </div>
 	</div>
 
