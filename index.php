@@ -8,14 +8,14 @@
 		<?php while (have_posts()) : the_post(); ?>
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<span class="postmetadata"><?php the_category(' / ') ?> &mdash; <?php edit_post_link('Edit', '', ' &mdash; '); ?>  <?php comments_popup_link('No comments', '1 comment', '% comments'); ?></span><br/>
+			<span class="postmetadata"><?php the_category(' / ') ?> &mdash; <?php edit_post_link('Modifier', '', ' &mdash; '); ?>  <?php comments_popup_link('Aucun commentaire', 'Un commentaire', '% commentaires'); ?></span><br/>
 			    <small><span class="date"><?php the_time('d') ?></span><br /><?php the_time('M y') ?> <!-- by <?php the_author() ?> --></small>
-				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent sur la page : <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				
 				
 
 				<div class="entry">
-					<?php the_content('<em>Continue reading &rarr;</em>'); ?>
+					<?php the_content("<em>Lire le reste de l'article &rarr;</em>"); ?>
 				</div>
 				<div class="clearfix"></div>
 
@@ -24,8 +24,8 @@
 		<?php endwhile; ?>
 
 		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&larr; Older Entries') ?></div>
-			<div class="alignright"><?php previous_posts_link('Newer Entries &rarr;') ?></div>
+			<div class="alignleft"><?php next_posts_link('&larr; Commentaires précédents') ?></div>
+			<div class="alignright"><?php previous_posts_link('Commentaires plus récents &rarr;') ?></div>
 			<div class="clearfix"></div>
 		</div>
 		
@@ -33,8 +33,8 @@
 
 	<?php else : ?>
 
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+		<h2 class="center">Introuvable</h2>
+		<p class="center">Désolé, votre requête n'a généré aucun résultat.</p>
 		<?php //get_search_form(); ?>
 
 	<?php endif; ?>
