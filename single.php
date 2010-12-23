@@ -22,11 +22,11 @@
 
 						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// Both Comments and Pings are open ?>
-							Vous pouvez <a href="#respond">laisser un commentaire</a> ou <a href="<?php trackback_url(); ?>" rel="trackback">pointer sur cet article</a> depuis votre propre site.
+							Vous pouvez <a href="#respond">laisser un commentaire</a> ou faîtes un <a href="<?php trackback_url(); ?>" rel="trackback">rétrolien</a> depuis votre site.
 
 						<?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// Only Pings are Open ?>
-							Vous pouvez <a href="<?php trackback_url(); ?> " rel="trackback">pointer sur cet article</a> depuis votre propre site.
+							Vous pouvez faire un <a href="<?php trackback_url(); ?> " rel="trackback">rétrolien</a> depuis votre site.
 
 						<?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
 							// Comments are open, Pings are not ?>

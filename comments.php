@@ -13,7 +13,7 @@
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments"><?php comments_number('Aucun commentaire', 'Un commentaire', '% commentaires' );?></h3>
+	<h3 id="comments"><?php comments_number('Aucun commentaire', 'Un commentaire', '% commentaires');?></h3>
 
 	<ol class="commentlist">
 		<?php wp_list_comments('type=comment&callback=cleanr_theme_comment'); ?>
