@@ -1,3 +1,9 @@
+Installation
+-------------
+
+1) Télécharger le fichier en format zip de la branche master sur votre ordinateur.
+2) Envoyer le thème en format zip depuis l'interface administrateur sur votre serveur.
+
 Quelques changements au thème original
 --------------------------------------
 
@@ -6,8 +12,8 @@ Sur la homepage, la section Meta a été enlevée.
 Dans la sidebar, le titre de la sous-navigation a été enlevé.
 
 
-Certaines fonctionnalités que je n'utlise pas n'ont pas été traduites.
-----------------------------------------------------------------------
+Certaines fonctionnalités que je n'utlise pas n'ont pas été traduites
+---------------------------------------------------------------------
 
 Le fichier comments-popup.php
 
