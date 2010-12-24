@@ -21,8 +21,8 @@
  <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a><span class="description"><?php bloginfo('description'); ?></span></h1>	
 
 <ul id="nav">
-  <?php wp_list_pages('title_li=Pages'); ?>
-  <?php wp_list_categories('title_li=Catégories'); ?>
+  <?php //wp_list_pages('title_li=Pages'); ?>
+  <?php //wp_list_categories('title_li=Catégories'); ?>
   <li class="last-child"><a href="<?php bloginfo('rss2_url'); ?>" class="rss">RSS</a></li>
 </ul>
   
