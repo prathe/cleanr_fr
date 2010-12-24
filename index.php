@@ -24,8 +24,8 @@
 		<?php endwhile; ?>
 
 		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&larr; Commentaires précédents') ?></div>
-			<div class="alignright"><?php previous_posts_link('Commentaires plus récents &rarr;') ?></div>
+			<div class="alignleft"><?php next_posts_link('&larr; Articles précédents') ?></div>
+			<div class="alignright"><?php previous_posts_link('Articles plus récents &rarr;') ?></div>
 			<div class="clearfix"></div>
 		</div>
 		

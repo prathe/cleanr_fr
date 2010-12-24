@@ -49,11 +49,11 @@ if ( post_password_required($post) ) {  // and it doesn't match the cookie
 <?php } // end for each comment ?>
 </ol>
 <?php } else { // this is displayed if there are no comments so far ?>
-	<p>No comments yet.</p>
+	<p>Aucun commentaire.</p>
 <?php } ?>
 
 <?php if ('open' == $post->comment_status) { ?>
-<h2>Leave a comment</h2>
+<h2>Laissez un commentaire</h2>
 <p>Line and paragraph breaks automatic, e-mail address never displayed, <acronym title="Hypertext Markup Language">HTML</acronym> allowed: <code><?php echo allowed_tags(); ?></code></p>
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
