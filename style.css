@@ -28,13 +28,13 @@ p {color:#555}
 hr {margin:0; clear:both}
 
 /* HEADER */
-#header h1 {float:left; margin-top: 40px; width: 367px; height: 78px; background: url('images/logo.jpg') no-repeat scroll 0 0 transparent; }
+#header h1 {float:left; margin-top: 40px; width: 298px; height: 48px; background: url('images/logo.jpg') no-repeat scroll 0 0 transparent; }
 #header h1 a {color: #000;text-decoration: none;border:none; display: block; height: 100%; overflow: hidden; text-indent: -9999em; width: 100%; }
 #header h1 a:last-letter {color:#c00;}
 #header span {font:13px Georgia; font-style: italic; color: #aaa; margin-left:20px;position:relative;top:-7px;letter-spacing: 0}
 
 /* jQUery Dropdown menu */
-#nav { list-style: none; padding-top:100px; margin: 0; float:right;} 
+#nav { list-style: none; padding-top:60px; margin: 0; float:right;} 
 #nav li { float: left; margin: 0px 0px 0px 10px;padding:0px 15px 0px 0px;position:relative;font-size:14px;line-height: 1.8;zoom: 1} 
 #nav li:last-child {padding:0;}
 #nav .current-cat a, #nav .current_page_item a {color: #aaa}
